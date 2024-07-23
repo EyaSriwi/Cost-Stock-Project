@@ -1,0 +1,125 @@
+/* reset styles */
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+/* header styles */
+.navbar-default {
+  background-color: #303f9f;
+  border-color: #282d87;
+  padding: 10px 20px;
+}
+
+.navbar-default .navbar-header .logo {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.navbar-default .navbar-header .logo img.dark-logo,
+.navbar-default .navbar-header .logo img.light-logo {
+  max-width: 180px;
+  height: auto;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #fff;
+  font-size: 14px;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: #d4d4d4;
+}
+
+.navbar-default .app-search .form-control {
+  background-color: #fff;
+  border-color: #ddd;
+  border-radius: 4px;
+  color: #333;
+  height: 35px;
+  padding: 8px 12px;
+}
+
+.navbar-default .app-search .form-control:focus {
+  border-color: #ccc;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.125);
+}
+
+.navbar-default .app-search i {
+  color: #ddd;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.navbar-default .profile-pic img {
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+}
+
+/* sidebar styles */
+.navbar-default.sidebar {
+  background-color: #f8f9fa;
+  border-color: #e7e7e7;
+  position: fixed;
+  height: 100vh;
+  width: 250px;
+}
+
+.navbar-default.sidebar .sidebar-nav {
+  background-color: #f8f9fa;
+  padding-top: 10px;
+}
+
+.navbar-default.sidebar .sidebar-head {
+  background-color: #fff;
+  border-bottom: 1px solid #e7e7e7;
+  padding: 10px;
+}
+
+.navbar-default.sidebar .sidebar-head h3 {
+  color: #333;
+  font-size: 14px;
+  margin: 0 0 0 10px;
+}
+
+.navbar-default.sidebar .sidebar-head .hide-menu {
+  color: #ddd;
+  display: none;
+}
+
+.navbar-default.sidebar .sidebar-nav ul li {
+  border-bottom: 1px solid #e7e7e7;
+  line-height: 40px;
+  padding: 0 15px;
+}
+
+.navbar-default.sidebar .sidebar-nav ul li a {
+  color: #333;
+  display: block;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.navbar-default.sidebar .sidebar-nav ul li a:hover {
+  background-color: #e7e7e7;
+  color: #333;
+}
+
+.navbar-default.sidebar .sidebar-nav ul li a i {
+  color: #ccc;
+  margin-right: 10px;
+}
+
+.navbar-default.sidebar .sidebar-nav .center {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.navbar-default.sidebar .sidebar-nav .center a {
+  background-color: #f05050;
+  border-color: #e337
+}
