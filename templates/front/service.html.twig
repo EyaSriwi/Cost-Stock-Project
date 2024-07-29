@@ -1,0 +1,127 @@
+{% extends 'front/base.html.twig' %}
+
+{# {% block title %}Hello ServiceController!{% endblock %} #}
+
+{% block body %}
+
+
+
+
+<!-- Page Header Start -->
+<div class="container-fluid page-header mb-5 p-0" style="background-image: url('{{ asset('assetsFrontOffice/img/carousel-bg-2.jpg') }}');">
+    <div class="container-fluid page-header-inner py-5">
+        <div class="container text-center">
+            <h1 class="display-3 text-white mb-3 animated slideInDown">Services</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb justify-content-center text-uppercase">
+
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                    <li class="breadcrumb-item text-white active" aria-current="page">Services</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+</div>
+<!-- Page Header End -->
+
+<!-- Service Start -->
+<div class="container-xxl service py-5">
+    <div class="container">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h6 class="text-primary text-uppercase">// Our Products //</h6>
+            <h1 class="mb-5">Explore Our Products</h1>
+        </div>
+        <div class="row g-4 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="col-lg-4">
+                <div class="nav w-100 nav-pills me-4">
+                    <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4 active" data-bs-toggle="pill" data-bs-target="#tab-pane-1" type="button">
+                        <i class="fa fa-car-side fa-2x me-3"></i>
+                        <h4 class="m-0">Dach Haube Ixeo 2015</h4>
+                    </button>
+                    <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4" data-bs-toggle="pill" data-bs-target="#tab-pane-2" type="button">
+                        <i class="fa fa-car fa-2x me-3"></i>
+                        <h4 class="m-0">SCA 324/327</h4>
+                    </button>
+                    <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4" data-bs-toggle="pill" data-bs-target="#tab-pane-3" type="button">
+                        <i class="fa fa-cog fa-2x me-3"></i>
+                        <h4 class="m-0">SCA 224/226</h4>
+                    </button>
+                    <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-0" data-bs-toggle="pill" data-bs-target="#tab-pane-4" type="button">
+                        <i class="fa fa-oil-can fa-2x me-3"></i>
+                        <h4 class="m-0">KA</h4>
+                    </button>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <div class="tab-content w-100">
+                    <div class="tab-pane fade show active" id="tab-pane-1">
+                        <div class="row g-4">
+                            <div class="col-md-6" style="min-height: 350px;">
+                                <div class="position-relative h-100">
+                                    <img class="position-absolute img-fluid w-100 h-100" src="{{ asset('assetsFrontOffice/img/service-1.jpg') }}"
+                                        style="object-fit: cover;" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <h3 class="mb-3">Haube Ixeo 2015 Dach</h3>
+                                <p class="mb-4">The "Ixeo 2015 Dach" is a variant of the Bürstner Ixeo motorhome series from 2015, known for its innovative roof designs. It features pop-up roofs for added headroom or sleeping space, and may include integrated features like skylights or solar panels. This model exemplifies Bürstner's commitment to combining comfort and functionality in recreational vehicles.</p>
+                                <a href="" class="btn btn-primary py-3 px-5 mt-3">Read More<i class="fa fa-arrow-right ms-3"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="tab-pane-2">
+                        <div class="row g-4">
+                            <div class="col-md-6" style="min-height: 350px;">
+                                <div class="position-relative h-100">
+                                    <img class="position-absolute img-fluid w-100 h-100" src="{{ asset('assetsFrontOffice/img/service-2.jpg') }}"
+                                        style="object-fit: cover;" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <h3 class="mb-3">SCA 325/327</h3>
+                                <p class="mb-4">SCA, renowned for pop-up roofs in box vans, introduces new models:</p>
+                                <p><i class="fa fa-check text-success me-3"></i>SCA 324: Short wheelbase with front setup</p>
+                                <p><i class="fa fa-check text-success me-3"></i>SCA 326: Long wheelbase with front setup</p>
+                                <p><i class="fa fa-check text-success me-3"></i>SCA 327: Long wheelbase with rear setup</p>
+                                <a href="" class="btn btn-primary py-3 px-5 mt-3">Read More<i class="fa fa-arrow-right ms-3"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="tab-pane-3">
+                        <div class="row g-4">
+                            <div class="col-md-6" style="min-height: 350px;">
+                                <div class="position-relative h-100">
+                                    <img class="position-absolute img-fluid w-100 h-100" src="{{ asset('assetsFrontOffice/img/service-3.jpg') }}"
+                                        style="object-fit: cover;" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <h3 class="mb-3">SCA 224/226</h3>
+                                <p class="mb-4">The SCA 224 and SCA 226 pop-up roofs for the Ford Transit V363 enhance camping experiences with additional sleeping space. Constructed from lightweight yet durable GRP, they feature integrated ribs for improved vehicle handling and increased payload capacity. These roofs come with a standard white shell, support flexible solar modules, and include ballistic polyester fabric bellows with panoramic windows. Security is enhanced with a new Southco locking system and an automatic retracting mechanism for added safety.</p>
+                                <a href="" class="btn btn-primary py-3 px-5 mt-3">Read More<i class="fa fa-arrow-right ms-3"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="tab-pane-4">
+                        <div class="row g-4">
+                            <div class="col-md-6" style="min-height: 350px;">
+                                <div class="position-relative h-100">
+                                    <img class="position-absolute img-fluid w-100 h-100" src="{{ asset('assetsFrontOffice/img/service-4.jpg') }}"
+                                        style="object-fit: cover;" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <h3 class="mb-3">KA</h3>
+                                <p class="mb-4">We have specialized in the production of covering systems for over 40 years. You will also find recycling containers and street furniture components in our product range. Due to its corrosion resistance, fiberglass reinforced polyester resin is ideally suited to withstand the effects of weathering over the long term. Our clients choose our products because of their durability and reliability.</p>
+                                <a href="" class="btn btn-primary py-3 px-5 mt-3">Read More<i class="fa fa-arrow-right ms-3"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Service End -->
+{% endblock %}
