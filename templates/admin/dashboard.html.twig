@@ -1,0 +1,25 @@
+{% extends 'admin/baseadmin.html.twig' %}
+
+{% block body %}
+    <div id="page-wrapper">
+        <div class="container-fluid">
+            <div class="row bg-title">
+                <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                    <h4 class="page-title">Dashboard</h4>
+                </div>
+                <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
+                    <a href="https://wrappixel.com/templates/ampleadmin/" target="_blank" class="btn btn-danger pull-right m-l-20 hidden-xs hidden-sm waves-effect waves-light">Upgrade to Pro</a>
+                    <ol class="breadcrumb">
+                        <li><a href="{{ path('app_dashboard') }}">Dashboard</a></li>
+                        <li class="active">Dashboard</li>
+                    </ol>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <iframe title="Cost Project Itap PFE" width="1140" height="541.25"
+                    src="https://app.powerbi.com/reportEmbed?reportId=bd71e921-e06c-4989-b6b1-f4ef361425cc&autoAuth=true&ctid=604f1a96-cbe8-43f8-abbf-f8eaf5d85730&filterPaneEnabled=false&navContentPaneEnabled=false"
+                    frameborder="0" allowfullscreen="true"></iframe>
+        </div>
+        <!-- /.container-fluid -->
+    </div>
+{% endblock %}

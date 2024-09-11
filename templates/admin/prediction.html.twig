@@ -1,0 +1,64 @@
+{% extends 'admin/baseadmin.html.twig' %}
+
+{% block body %}
+    <div id="page-wrapper">
+        <div class="container-fluid">
+            <div class="row bg-title">
+                <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                    <h4 class="page-title">Machine Learning Model</h4>
+                </div>
+                <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
+                    <a href="https://wrappixel.com/templates/ampleadmin/" target="_blank" class="btn btn-danger pull-right m-l-20 hidden-xs hidden-sm waves-effect waves-light">Upgrade to Pro</a>
+                    <ol class="breadcrumb">
+                        <li><a href="#">Dashboard</a></li>
+                        <li class="active">Predictive Analysis</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- Form for Maintenance Prediction -->
+            <form action="{{ path('app_prediction') }}" method="POST">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="text-uppercase text-sm">PREDICTION OF THE Cost <strong>Maintenance</strong></p>
+                        <div class="row"></div>
+                        <div class="form-group">
+                            <label class="form-control-label" for="Menge">Quantity (Menge):</label>
+                            <input type="text" class="form-control" name="Menge" id="Menge" required><br>
+
+                            <label class="form-control-label" for="Nettpreis">Net Price (Nettopreis):</label>
+                            <input type="text" class="form-control" name="Nettpreis" id="Nettpreis" required><br>
+
+                            <!-- Submit Button for Maintenance -->
+                            <button type="submit" class="btn btn-danger mt-3">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <!-- Form for Production Prediction -->
+            <form action="{{ path('predictProduction') }}" method="POST">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="text-uppercase text-sm">PREDICTION OF THE Cost <strong>Production</strong></p>
+                        <div class="row"></div>
+                        <div class="form-group">
+
+                            <label class="form-control-label" for="MengeProd">Quantity (Menge):</label>
+                            <input type="text" class="form-control" name="MengeProd" id="MengeProd" required><br>
+
+                            <label class="form-control-label" for="WertBB">Value Movement Stock (WertBB):</label>
+                            <input type="text" class="form-control" name="WertBB" id="WertBB" required><br>
+
+                            <label class="form-control-label" for="Gesamtvbrwert">Total Consumption Value (Gesamtvbrwert):</label>
+                            <input type="text" class="form-control" name="Gesamtvbrwert" id="Gesamtvbrwert" required><br>
+
+                            <!-- Submit Button for Production -->
+                            <button type="submit" class="btn btn-danger mt-3">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock %}

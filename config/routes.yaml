@@ -12,5 +12,7 @@ front_app:
 admin_app:
   resource: '../src/Controller/Admin'
   type: annotation
-  prefix: administration
 #  schemes:    [https]
+predict:
+  path: /predict
+  controller: App\Controller\Admin\ModelController::predict

@@ -18,25 +18,25 @@
     </nav>
     <div class="form-wrapper">
         <h2>log In</h2>
-        <form action="#">
+        {% if error %}
+            <div class="alert alert-danger" style="color: white; background-color: red; padding: 15px; border-radius: 5px;">
+                {{ error.messageKey | trans(error.messageData, 'security') }}
+            </div>
+        {% endif %}
+
+        <form action="{{ path('security.login') }}" method="post">
             <div class="form-control">
-                <input type="text" required>
+                <input type="text" name="_username" value="{{ last_username }}" required>
                 <label>Email or phone number</label>
             </div>
             <div class="form-control">
-                <input type="password" required>
+                <input type="password" name="_password" required>
                 <label>Password</label>
             </div>
             <button type="submit">Sign In</button>
-            <div class="form-help">
-                <div class="remember-me">
-                    <input type="checkbox" id="remember-me">
-                    <label for="remember-me">Remember me</label>
-                </div>
-                <a href="#">Need help?</a>
-            </div>
         </form>
-        <p>New to Itap? <a href="signup">Sign up now</a></p>
+        <p>did you forgot your password?? <a href={{ path('app_dashboard') }}>click here to reset.</a></p>
+        <p>New to Itap? <a href={{ path('security.registration') }}>Sign up now</a></p>
 
     </div>
     </body>
